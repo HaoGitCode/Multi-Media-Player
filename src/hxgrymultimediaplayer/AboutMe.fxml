@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hxgrymultimediaplayer.AboutController">
+   <children>
+      <TabPane layoutX="8.0" layoutY="-3.0" prefHeight="400.0" prefWidth="585.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="About this application">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="aboutThis" layoutX="20.0" layoutY="14.0" prefHeight="318.0" prefWidth="547.0" text="Author: Hao Xi&#10;&#10;This is a Multi Media player for macOS operating system. This application could &#10;play music and video by switching scenes. This multi media player is used for &#10;playing recording the interrupt time for users when they would like to mark the &#10;timestamp on the medias.  The correct way to operate this player would be explained&#10;by the video attached with this project. User can load any music or video file from &#10;Open Button.The records of laptime can be save through top menu. " />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hxgrymultimediaplayer.VideoController">
+    <children>
+      <MenuBar prefHeight="17.0" prefWidth="800.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Save">
+               <items>
+                  <Menu mnemonicParsing="false" onAction="#saveFile" text="Save Record" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="label" layoutX="687.0" layoutY="43.0" prefHeight="17.0" prefWidth="91.0" text="Video Player" />
+      <Button layoutX="631.0" layoutY="352.0" mnemonicParsing="false" onAction="#goBackToPage1" text="Go to Music Player " />
+      <MediaView fx:id="mediaView" fitHeight="250.0" fitWidth="500.0" layoutX="26.0" layoutY="51.0" />
+      <Button layoutX="26.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleOpen2" text="Open" />
+      <Button fx:id="playPause" layoutX="92.0" layoutY="352.0" mnemonicParsing="false" onAction="#handlePlayPause2" prefHeight="27.0" prefWidth="60.0" text="Play" />
+      <Button layoutX="179.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleStop" text="Stop" />
+      <Slider fx:id="timeSlider2" layoutX="26.0" layoutY="322.0" onMousePressed="#handleSliderMousePressed2" onMouseReleased="#handleSliderMouseReleased2" prefHeight="16.0" prefWidth="500.0" />
+      <TextArea fx:id="lapField" layoutX="536.0" layoutY="70.0" prefHeight="268.0" prefWidth="255.0" />
+      <Text fx:id="lengthText" layoutX="330.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="currentText" layoutX="520.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="errorText" layoutX="19.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="14.0" />
+      <Button fx:id="lapButton" layoutX="546.0" layoutY="38.0" mnemonicParsing="false" onAction="#lapButtonAction" text="Record" />
+      <Text layoutX="238.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Music Length:" />
+      <Text layoutX="430.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Time:" />
+   </children>
+</AnchorPane>
